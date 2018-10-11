@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ENSO</title>
+	<script type="text/javascript" src="jquery-3.1.0.js"></script>
+	<script type="text/javascript" src="highcharts.js"></script>
+	<script type="text/javascript" src="exporting.js"></script>
+	<script type="text/javascript" src="data.js"></script>
+	<script src="onis.txt"></script>
+</head>
+<body>
+	<div id="contenedor" style="min-width: 310px; height: 350px; margin: 0 auto"></div>
+	<table style="width: 100%;">
+		<tr>
+			<td>
+				<div id="graficaTorta" style="min-width: 310px; height: 250px; max-width: 600px; margin: 0 auto"></div>
+			</td>
+			<td>
+				<div id="graficaEstadisticas" style="min-width: 310px; height: 250px; margin: 0 auto"></div>
+			</td>
+		</tr>
+	</table>
+	<button><a href="index.html">Mostrar solo Niños y Niñas</a></button>
+	<table id="tablaEstadisticas" style="display: none;">
+	    <thead>
+	        <tr>
+	            <th></th>
+	            <th>Niño</th>
+	            <th>Niña</th>
+	        </tr>
+	    </thead>
+	    <tbody>
+	        <tr id="maxOni">
+	            <th>Máx Oni</th>
+	            <td>0.5</td>
+	            <td>4</td>
+	        </tr>
+	        <tr id="minOni">
+	            <th>Mín Oni</th>
+	            <td>2</td>
+	            <td>2</td>
+	        </tr>
+	    </tbody>
+	</table>
+	<script src="graficar2.js"></script>
+</body>
+</html>
